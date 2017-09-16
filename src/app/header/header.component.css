@@ -1,0 +1,24 @@
+.bg-faded {
+    background-color: rgba(48,25,15,0.7);
+    border-bottom: solid #DDDDDD 1px;
+}
+
+.nav-link, .navbar-brand{
+    color: white !important;
+}
+
+.nav-link:hover{
+    color: white !important;
+}
+
+a.disabled {
+    opacity: 0.4;
+}
+
+.dropdown-menu {
+    background-color: rgba(255,255,255,0.5);
+}
+
+.dropdown-item:hover {
+    background-color: rgba(140,178,191,0.5);
+}

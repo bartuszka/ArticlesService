@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+html {
+    background-image: url('/assets/img/newspaper.jpg');
+}
+
+body {
+    background-color: rgba(255, 255,255,0) !important;
+}
+
+.form-control, .btn {
+    border-radius: 3px !important;
+}
+
+.form-control:focus, .btn:hover {
+    border: solid #000000 1px !important;
+    background: white !important;
+}
