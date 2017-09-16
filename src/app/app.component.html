@@ -5,5 +5,5 @@
             <router-outlet></router-outlet>
         </div>
     </div>
-    <app-messages *ngIf="loggedIn == true"></app-messages>
+    <app-messages *ngIf="authService.isLoggedIn()"></app-messages>
 </div>

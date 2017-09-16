@@ -22,3 +22,7 @@ a.disabled {
 .dropdown-item:hover {
     background-color: rgba(140,178,191,0.5);
 }
+
+.disabledLink {
+    display: none;
+}

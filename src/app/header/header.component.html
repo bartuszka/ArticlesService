@@ -21,8 +21,8 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" [routerLink]="['articles', 1]">Article details</a>
-            <a class="dropdown-item" [routerLink]="['articles', 1, 'new']">Write an article</a>
-            <a class="dropdown-item" [routerLink]="['articles', 1, 'edit']">Edit an article</a>
+            <a class="dropdown-item" [routerLink]="['articles', 1, 'new']" [ngClass]="{disabledLink: !isLoggedin()}">Write an article</a>
+            <a class="dropdown-item" [routerLink]="['articles', 1, 'edit']" [ngClass]="{disabledLink: !isLoggedin()}">Edit an article</a>
           </div>
         </div>
 
@@ -31,8 +31,8 @@
               User
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" routerLink="login">Login or Register</a>
-              <a class="dropdown-item" style="cursor: pointer">Logout</a>
+              <a class="dropdown-item" routerLink="login" [ngClass]="{disabledLink: isLoggedin()}">Login or Register</a>
+              <a class="dropdown-item" style="cursor: pointer" (click)="logout()" [ngClass]="{disabledLink: !isLoggedin()}">Logout</a>
             </div>
         </div>
       </div>

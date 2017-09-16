@@ -14,6 +14,8 @@ import { BlogModule } from './blog/blog.module';
 import { MessageDetailsComponent } from './messages/message-details/message-details.component';
 import { WriteMessageComponent } from './messages/write-message/write-message.component';
 import { MessagesComponent } from './messages/messages.component';
+import { AuthService } from './shared/auth.service';
+import { AuthGuard } from './shared/aut-guard';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,10 @@ import { MessagesComponent } from './messages/messages.component';
     ArticlesModule,
     BlogModule
   ],
-  providers: [],
+  providers: [
+    AuthService,
+    AuthGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

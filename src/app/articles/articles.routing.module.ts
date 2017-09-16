@@ -3,13 +3,14 @@ import { Routes, RouterModule } from "@angular/router";
 import { ArticlesComponent } from "./articles.component";
 import { ArticleDetailsComponent } from "./article-details/article-details.component";
 import { ArticleEditComponent } from "./article-edit/article-edit.component";
+import { AuthGuard } from "../shared/aut-guard";
 
 const routes: Routes = [
     { path: 'articles', component: ArticlesComponent,
         children:[
             { path: ':id', component: ArticleDetailsComponent },
-            { path: ':id/edit', component: ArticleEditComponent },
-            { path: ':id/new', component: ArticleEditComponent }
+            { path: ':id/edit', component: ArticleEditComponent, canActivate: [AuthGuard] },
+            { path: ':id/new', component: ArticleEditComponent, canActivate: [AuthGuard] }
         ]
     }
 ]
