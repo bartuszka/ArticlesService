@@ -5,7 +5,7 @@ import { BlogComponent } from "./blog.component";
 import { AuthGuardService } from "../shared/auth-guard.service";
 
 const routes: Routes = [
-    { path: 'blog', component: BlogComponent, canActivateChild: [AuthGuardService],
+    { path: '', component: BlogComponent, canActivateChild: [AuthGuardService],
         children: [
             { path: 'write-message', component: BlogMessageComponent }
         ]

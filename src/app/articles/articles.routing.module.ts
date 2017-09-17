@@ -6,13 +6,13 @@ import { ArticleEditComponent } from "./article-edit/article-edit.component";
 import { AuthGuardService } from "../shared/auth-guard.service";
 
 const routes: Routes = [
-    /*{ path: 'articles', component: ArticlesComponent,
+    { path: '', component: ArticlesComponent,
         children:[
             { path: ':id', component: ArticleDetailsComponent },
             { path: ':id/edit', component: ArticleEditComponent, canActivate: [AuthGuardService] },
             { path: ':id/new', component: ArticleEditComponent, canActivate: [AuthGuardService] }
         ]
-    }*/
+    }
 ]
 
 @NgModule({

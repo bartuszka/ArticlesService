@@ -8,9 +8,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MainPageModule } from './main-page/main-page.module';
 import { AppRoutingModule } from './app.routing.module';
-import { LoginPageModule } from './login-page/login-page.module';
-import { ArticlesModule } from './articles/articles.module';
-import { BlogModule } from './blog/blog.module';
 import { MessageDetailsComponent } from './messages/message-details/message-details.component';
 import { WriteMessageComponent } from './messages/write-message/write-message.component';
 import { MessagesComponent } from './messages/messages.component';
@@ -32,9 +29,6 @@ import { AuthGuardService } from './shared/auth-guard.service';
     BrowserAnimationsModule,
     MainPageModule,
     AppRoutingModule,
-    LoginPageModule,
-    ArticlesModule,
-    BlogModule
   ],
   providers: [
     AuthService,
