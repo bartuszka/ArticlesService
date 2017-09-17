@@ -15,7 +15,7 @@ import { MessageDetailsComponent } from './messages/message-details/message-deta
 import { WriteMessageComponent } from './messages/write-message/write-message.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AuthService } from './shared/auth.service';
-import { AuthGuard } from './shared/aut-guard';
+import { AuthGuardService } from './shared/auth-guard.service';
 
 @NgModule({
   declarations: [
@@ -38,7 +38,7 @@ import { AuthGuard } from './shared/aut-guard';
   ],
   providers: [
     AuthService,
-    AuthGuard
+    AuthGuardService
   ],
   bootstrap: [AppComponent]
 })
